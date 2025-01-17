@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse des Performances</title>
+    <link href="analyse_performance.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header-excel text-center py-3 bg-primary text-white">
+        CRM NEXUS
+    </div>
+
+    <div class="table-title text-center my-4">
+        <h2>ANALYSE DES PERFORMANCES</h2>
+    </div>
+
+    <div class="container table-section">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2">Informations sur les clients</th>
+                    <th colspan="2"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nom du client</td>
+                    <td><input type="text" class="form-control" name="employee_name"></td>
+                    <td>Département</td>
+                    <td><input type="text" class="form-control" name="department"></td>
+                </tr>
+                <tr>
+                    <td>ID du client</td>
+                    <td><input type="text" class="form-control" name="id"></td>
+                    <td>Poste administratif</td>
+                    <td><input type="text" class="form-control" name="position"></td>
+                </tr>
+                <tr>
+                    <td>Nom de l'évaluateur</td>
+                    <td><input type="text" class="form-control" name="evaluator_name"></td>
+                    <td>Date du jour</td>
+                    <td><input type="date" class="form-control" name="evaluation_date"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container table-section">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Critères</th>
+                    <th>Insatisfaisant</th>
+                    <th>Satisfaisant</th>
+                    <th>Bon</th>
+                    <th>Excellent</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fonctionne à plein régime</td>
+                    <td><input type="radio" name="work_quality" value="insatisfaisant"></td>
+                    <td><input type="radio" name="work_quality" value="satisfaisant"></td>
+                    <td><input type="radio" name="work_quality" value="bon"></td>
+                    <td><input type="radio" name="work_quality" value="excellent"></td>
+                </tr>
+                <tr>
+                    <td>Qualité du service</td>
+                    <td><input type="radio" name="performance_quality" value="insatisfaisant"></td>
+                    <td><input type="radio" name="performance_quality" value="satisfaisant"></td>
+                    <td><input type="radio" name="performance_quality" value="bon"></td>
+                    <td><input type="radio" name="performance_quality" value="excellent"></td>
+                </tr>
+                <tr>
+                    <td>Cohérence du service</td>
+                    <td><input type="radio" name="work_consistency" value="insatisfaisant"></td>
+                    <td><input type="radio" name="work_consistency" value="satisfaisant"></td>
+                    <td><input type="radio" name="work_consistency" value="bon"></td>
+                    <td><input type="radio" name="work_consistency" value="excellent"></td>
+                </tr>
+                <tr>
+                    <td>Communication</td>
+                    <td><input type="radio" name="communication" value="insatisfaisant"></td>
+                    <td><input type="radio" name="communication" value="satisfaisant"></td>
+                    <td><input type="radio" name="communication" value="bon"></td>
+                    <td><input type="radio" name="communication" value="excellent"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container text-center my-4">
+        <button type="button" class="btn btn-primary btn-submit">ENVOYER</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="analyse_performance.js"></script>
+</body>
+</html>
